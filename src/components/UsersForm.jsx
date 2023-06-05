@@ -135,16 +135,7 @@ const UsersForm = ({
         </div>
         <div className="userform__input">
           <label htmlFor="birthday">Birthday</label>
-          <input
-            {...register('birthday', {
-              required: {
-                value: true,
-                message: 'This field is required.',
-              },
-            })}
-            type="date"
-            id="birthday"
-          />
+          <input {...register('birthday')} type="date" id="birthday" />
           {errors.birthday && (
             <span className="usersform__error">
               <i className="bx bx-error"></i>

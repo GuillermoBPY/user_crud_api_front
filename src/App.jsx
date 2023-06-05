@@ -20,7 +20,7 @@ function App() {
     last_name: '',
     birthday: '',
   });
-  const url = 'https://users-crud.academlo.tech/users/';
+  const url = 'https://users-crud-api-1u40.onrender.com/api/v1/users';
 
   const getAllUsers = () => {
     axios
