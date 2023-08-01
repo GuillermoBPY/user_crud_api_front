@@ -51,6 +51,7 @@ function App() {
 
   const deleteUser = (id, first_name, last_name) => {
     const urlId = `${url}/${id}`;
+
     axios
       .delete(urlId)
       .then((res) => {
