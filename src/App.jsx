@@ -20,7 +20,8 @@ function App() {
     last_name: '',
     birthday: '',
   });
-  const url = 'https://users-crud-api-1u40.onrender.com/api/v1/users';
+
+  const url = import.meta.env.VITE_BASE_URL;
 
   const getAllUsers = () => {
     axios
